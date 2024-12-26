@@ -1,0 +1,22 @@
+# The values in the config file are overridden by values set through GObject
+# properties.
+
+[property]
+enable=1
+object_ids=1
+
+[user-configs]
+custom-lib-path=/opt/nvidia/deepstream/deepstream-6.0/lib/gst-plugins/libcustom2d_preprocess.so
+custom-tensor-preparation-function=CustomTensorPreparation
+
+
+[source-0]
+enable=1
+zone_ids=0;1
+fcm_factor=3.2
+zone_cords-0=796;813,1004, 793, 976, 512, 950, 251, 757, 281, 666, 436, 676, 518, 637, 566, 669, 719, 818, 700, 255,0,0
+zone_cords-1=796;813,1004, 793, 976, 512, 950, 251, 757, 281, 666, 436, 676, 518, 637, 566, 669, 719, 818, 700, 255,0,0
+zone_approach-0=0
+zone_approach-1=0
+remove_uncounted=0
+custom_input_transformation_function=CustomAsyncTransformation
